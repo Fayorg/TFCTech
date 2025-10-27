@@ -1,0 +1,27 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "getting_started"
+	group: ""
+	id: "01B7F70BCCBCD263"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		description: [
+			"Welcome to this advanture! Hope you're going to love it."
+			""
+			"This modpack is an attempt to add technology mods (like Mekanism, Ender IO, ...) into TerraFirmaCraft."
+			""
+			"This modpack is in beta, please report any issue you encounter during your letsplay."
+		]
+		id: "6D549B7323E657A5"
+		tasks: [{
+			id: "73011127767BB82F"
+			title: "Welcome"
+			type: "checkmark"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "Getting Started"
+}

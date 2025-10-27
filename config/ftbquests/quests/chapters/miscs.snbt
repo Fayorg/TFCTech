@@ -1,0 +1,20 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "miscs"
+	group: ""
+	id: "6437F8F60990CD63"
+	order_index: 2
+	quest_links: [ ]
+	quests: [{
+		id: "3B76087FED572D5F"
+		tasks: [{
+			id: "3847253AB2FBD411"
+			item: "functionalstorage:tfc_acacia_1"
+			type: "item"
+		}]
+		x: -2.0d
+		y: -1.0d
+	}]
+	title: "Miscs"
+}
