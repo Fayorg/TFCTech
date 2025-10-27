@@ -6,6 +6,235 @@
 	id: "1C43672D5A445F12"
 	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
-	title: "TFC"
+	quests: [
+		{
+			description: ["This isn't vanilla Minecraft. You can't punch trees, and you'll need to learn new survival skills. Start by gathering sticks and stones from the ground."]
+			id: "2E9195241E601868"
+			rewards: [{
+				count: 16
+				id: "05472B0CE2D2784B"
+				item: "tfc:straw"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 10L
+					id: "7E510CEBDECA335F"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:rock_knapping)"
+						}
+					}
+					title: "Any #tfc:rock_knapping"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "692B3ECBFAD1911C"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:twigs)"
+						}
+					}
+					title: "Any #tfc:twigs"
+					type: "item"
+				}
+			]
+			title: "Not That Fast"
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2E9195241E601868"]
+			description: ["Hold multiple rocks in your hand and right-click to open the knapping interface. Follow the pattern from JEI to create your first stone tools!"]
+			id: "030F2BCCFEF97214"
+			rewards: [{
+				count: 16
+				id: "6246B109B3EC6399"
+				item: "tfc:straw"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "71DDAD4165B7FDD6"
+					item: "tfc:stone/knife_head/igneous_extrusive"
+					type: "item"
+				}
+				{
+					id: "35F1B93C85B99ABA"
+					item: "tfc:stone/axe_head/igneous_extrusive"
+					type: "item"
+				}
+				{
+					id: "0CEF9C2B547BC411"
+					item: "tfc:stone/shovel_head/igneous_extrusive"
+					type: "item"
+				}
+			]
+			title: "Knapping Basics"
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["030F2BCCFEF97214"]
+			id: "62EAB33922B4CA3A"
+			rewards: [{
+				count: 32
+				id: "7C2BB2A23E424627"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "54A61A5A9402172F"
+				item: { Count: 64, id: "minecraft:clay_ball" }
+				type: "item"
+			}]
+			title: "Pottery!"
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["030F2BCCFEF97214"]
+			id: "708996FD993D6240"
+			rewards: [{
+				count: 16
+				id: "016C6B901EB80486"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:wood/twig/oak"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 32L
+				id: "72D0532D26649CBD"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:aspen_logs)"
+					}
+				}
+				title: "Any #tfc:aspen_logs"
+				type: "item"
+			}]
+			title: "Getting Wood... The Hard Way"
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["708996FD993D6240"]
+			description: ["Drop 3 twigs and a log on the ground, and with a Fire Starter you can create a Fire Pit."]
+			id: "5D1A7B85545A7B05"
+			rewards: [
+				{
+					count: 3
+					id: "5E4A6AFABF11496E"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:wood/twig/oak"
+					}
+					type: "item"
+				}
+				{
+					id: "0FFE119A084B6C70"
+					item: "tfc:wood/log/oak"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3431C6E722D61AC6"
+				item: {
+					Count: 1
+					id: "tfc:firestarter"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Fire!"
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["030F2BCCFEF97214"]
+			description: ["With your knife, break some tall grass to get some straw. With 4 of these you can make some Thatch that are not affected by gravity. In other words, a roof!"]
+			id: "7AD612859296AB5D"
+			rewards: [{
+				count: 4
+				id: "49F9966ADAB0E7D7"
+				item: "tfc:thatch"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "2EF7FE3009307C85"
+				item: { Count: 64, id: "tfc:straw" }
+				type: "item"
+			}]
+			title: "Cutting Grass"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7AD612859296AB5D"
+				"5D1A7B85545A7B05"
+				"62EAB33922B4CA3A"
+			]
+			id: "0F7DE8A126EE61DE"
+			tasks: [
+				{
+					count: 3L
+					id: "0946F39305F795C8"
+					item: {
+						Count: 3
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:ceramic/unfired_vessel"
+					}
+					type: "item"
+				}
+				{
+					id: "0AF9E7EF0B685F2D"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:ceramic/unfired_jug"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: -1.5d
+		}
+	]
+	title: "Stone Age Survival"
 }
